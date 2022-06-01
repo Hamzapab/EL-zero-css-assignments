@@ -1,0 +1,72 @@
+/* exo 01 */
+.exo-1{
+    padding: 100px;
+    position: relative;
+}
+.exo-1 div{
+    width: 100px;
+    height: 100px;
+    position: relative;
+}
+.red{
+    background-color: red;
+
+}
+.green{
+    background-color: green;
+    z-index: -1;
+    top: -110px;
+    left: -10px;
+}
+.blue{
+    background-color: blue;
+    z-index: -2;
+    top: -220px;
+    left: -20px;
+}
+.black{
+    background-color: black;
+    z-index: -3;
+    top: -310px;
+    left: -20px;
+}
+/*  exo 02 */
+.exo-2{
+    margin: 0 auto;
+    background-color: gray;
+    position: relative;
+    width: 400px;
+    padding: 20px;
+    border: 1px solid;
+    border-color: red blue red blue;
+}
+.exo-2 span{
+    color: white;
+    background-color: blue;
+    width: 30px;
+    height: 40px;
+    position: absolute;
+    text-align: center;
+    box-sizing: border-box;
+    padding-top: 10px;
+}
+.top-left{
+    top: -20px;
+    left: -15px;
+    border-right: 1px solid red;
+}
+.top-right{
+    top: -20px;
+    right: -15px;
+    border-left: 1px solid red;
+}
+.bottom-right{
+    bottom: -20px;
+    right: -15px;
+    border-left: 1px solid red;
+}
+.bottom-left{
+    bottom: -20px;
+    left: -15px;
+    border-right: 1px solid red;
+}

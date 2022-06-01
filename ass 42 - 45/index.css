@@ -1,0 +1,69 @@
+h2{
+    background-color: cyan;
+    text-align: center;
+    border-radius: 8px;
+}
+/* exo 01 */
+.exo-01{
+    background-color: #F2F2F4;
+    padding: 20px;
+    margin-top: 40px;
+    height: 150px;
+    transition: all 0.5s ease-in;
+    -webkit-transition: all 0.5s ease-in;
+    -moz-transition: all 0.5s ease-in;
+    -ms-transition: all 0.5s ease-in;
+    -o-transition: all 0.5s ease-in;
+}
+.exo-01:hover{
+    margin-top: 0px;
+    cursor: pointer;
+}
+.exo-01 .child{
+    background-color: #DEDEDC;
+    text-align: center;
+    padding: 10px;
+    transition: 0.5s ease-in;
+    transition-delay: 0.5s;
+    -webkit-transition: 0.5s ease-in;
+    -moz-transition: 0.5s ease-in;
+    -ms-transition: 0.5s ease-in;
+    -o-transition: 0.5s ease-in;
+}
+.exo-01:hover > .child{
+    margin-top: 40px;
+}
+.exo-01 p{
+    text-align: center;
+}
+/* exo 02 */
+.exo-02 div{
+    border: none !important;
+    color: transparent !important;
+    position: relative;
+    height: 0;
+    width: 400px;
+    margin: 0 auto;
+}
+.exo-02 div::after{
+    content: "Zero";
+    background-color:#DEDEDC ;
+    width: 100%;
+    color: black;
+    font-size: 3rem;
+    text-align: center;
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+/* exo 03 */
+:root {
+    --mainColor: #009688;
+    --mainPadding: 10px;
+}
+.exo-03 div {
+    border: 2px solid var(--mainColor ,black);
+    color: var(--mainColor, red);
+    padding: var(--mainPadding , 15px);
+    margin-bottom: 10px;
+}

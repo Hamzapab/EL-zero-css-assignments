@@ -1,0 +1,107 @@
+h2{
+    background-color: cyan;
+    text-align: center;
+    border-radius: 8px;
+}
+/* exo 01 */
+.exo-01 div{
+    height: 100px;
+    width: 100px;
+    display: inline-block;
+    background-color: #EEEEEE;
+    border-radius: 50%;
+    text-align: center;
+    padding-top: 40px;
+    box-sizing: border-box;
+    border: 2px solid black;
+    position: relative;
+    margin-left: 30px;
+    box-shadow: -4px -4px #e91e63,
+                4px 4px #2196F3;
+}
+.exo-01 div::after{
+    color: white;
+    box-sizing: border-box;
+    width: 20px;
+    line-height: 20px;
+    padding: 1px;
+    border-radius: 50%;
+    background-color: black;
+    position: absolute;
+    top: 0;
+    transform: translateY(-50%);
+    left: 40px;
+}
+.exo-01 div:first-child::after{
+    content: "1";
+}
+.exo-01 div:nth-child(2)::after{
+    content: "2";
+}
+.exo-01 div:nth-child(3)::after{
+    content: "3";
+}
+/* exo 02 */
+.exo-02 div{
+    height: 100px;
+    width: 100px;
+    border-top-left-radius: 15%;
+    border-bottom-left-radius:60% ;
+    border-top-right-radius:60% ;
+    border-bottom-right-radius:15%;
+    box-shadow: 5px -5px 10px  gray inset,
+                -5px 5px 10px  gray inset;
+    margin: 0 auto;
+}
+/* exo 03 */
+.exo-03{
+    margin: 0 auto;
+    width: 550px;
+    display: flex;
+    gap: 20px;
+    padding: 5px;
+}
+.exo-03 > div:not(#or){
+    background-color: #EEEEEE;
+    flex-basis: 100%;
+    padding: 20px;
+}
+.exo-03 #or{
+    background-color: #03A9F4;
+    width: 1px;
+    position: relative;
+    color: white;
+}
+.exo-03 #or::after{
+    content: "or";
+    background-color: inherit;
+    border-radius: 50%;
+    position: absolute;
+    width: 20px;
+    aspect-ratio: 1/1;
+    text-align: center;
+    padding: 3px;
+    line-height: 20px;
+    left: -11.5px;
+    top: 50%;
+    transform: translateY(-50%);
+}
+.exo-03 .one{
+    background-color: #03A9F4;
+    color: white;
+    text-align: center;
+    padding: 5px;
+    font-size: 1.5rem;
+    border-radius: 8px;
+}
+.exo-03 .two{
+    margin-top: 20px;
+    background-color:#DDDDDD;
+    aspect-ratio: 1 / 1;
+    border-radius: 50%;
+    font-size:3rem;
+    box-sizing: border-box;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}

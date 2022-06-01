@@ -1,0 +1,214 @@
+h2{
+    background-color: cyan;
+    text-align: center;
+    border-radius: 8px;
+}
+*{
+    box-sizing: border-box;
+}
+/* exo 01 */
+.exo-01 div{
+    width: 100px;
+    height: 100px;
+    margin: 0 auto;
+    font-weight: bold;
+    font-size: 1.2rem;
+    color: #FF5722;
+    background-color: #EEEEEE;
+    border-radius: 50%;
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    -ms-border-radius: 50%;
+    -o-border-radius: 50%;
+    border-left: 5px solid #03a9f4;
+    border-right: 5px solid #ff5722;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+/* exo 02 */
+.exo-02 .parent{
+    width: 600px;
+    height: 300px;
+    margin: auto;
+    background-color: #eee;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-content: space-between;
+    padding: 10px;
+}
+.exo-02 .parent div{
+    width: 150px;
+    height: 40px;
+    background-color: #f44336;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+}
+/* exo 03 */
+.exo-03 .parent{
+    width: 600px;
+    height: 300px;
+    background-color: #EEEEEE;
+    margin: 0 auto;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    padding: 10px;
+}
+.exo-03 .parent div{
+    background-color: #607D8B;
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 31%;
+    padding: 10px;
+}
+.exo-03 .parent .one{
+    height: fit-content;
+    order: 6;
+    align-self: flex-end;
+}
+.exo-03 .parent .two{
+    order: 5;
+}
+.exo-03 .parent .three{
+    order: 2;
+    height: fit-content;
+} 
+.exo-03 .parent .four{
+    order: 3;
+}
+.exo-03 .parent .five{
+    order: 4;
+}
+.exo-03 .parent .six{
+    order: 1;
+}
+/* Exo 04 */
+.exo-04 .parent{
+    width: 600px;
+    height: 300px;
+    margin: 0 auto;
+    background-color: #EEEEEE;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    justify-content: space-between;
+    padding: 10px;
+}
+.exo-04 .parent div{
+    background-color: #009688;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    width: fit-content;
+    padding: 20px 10px;
+}
+.exo-04 .parent .two{
+    width: 50%;
+    align-self: flex-start;
+}
+/* exo 05 */
+.exo-05 .parent{
+    width: 600px;
+    height: 300px;
+    margin: 0 auto;
+    background-color: #EEEEEE;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+.exo-05 .parent div{
+    flex-basis: 18%;
+    height: 50%;
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.exo-05 .parent .one{
+    background-color: #FF9800;
+    order: 2;
+}
+.exo-05 .parent .two{
+    background-color: #8BC34A;
+    order: 3;
+    align-self: flex-end;
+}
+.exo-05 .parent .three{
+    background-color: #795548;
+    order: 4;
+}
+.exo-05 .parent .four{
+    order: 1;
+    background-color: #673AB7;
+    align-self: flex-end;
+}
+/* exo 06 */
+:root{
+    --gray-color:#DDDDDD;
+}
+.page {
+    background-color: #eee;
+    padding: 10px;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 15px;
+}  
+.footer,
+.header {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+}
+.header{
+    gap: 15px;
+}  
+.header .logo {
+    background-color: var(--gray-color);
+    width: 15%;
+    padding: 15px;
+    text-align: center;
+} 
+.header .links {
+    background-color: var(--gray-color);
+    list-style: none;
+    display: flex;
+    width: 85%;
+    height: 100%;
+    padding: 15px;
+    justify-content: flex-end;
+    margin: 0;
+}
+.header .links li {
+    margin-left: 15px;
+}
+.main-area {
+    display: flex;
+    align-items: center;
+    width: 100%;
+    gap: 15px;
+}
+.main-area .content,
+.main-area .sidebar {
+    background-color: var(--gray-color);
+    height: 60vh;
+    padding: 10px;
+}
+.main-area .content {
+    width: 60%;
+}
+.main-area .sidebar {
+    width: 40%;
+}
+.footer {
+    background-color: var(--gray-color);
+    padding: 15px;
+}
+
+
